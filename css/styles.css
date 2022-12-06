@@ -191,6 +191,7 @@ background-repeat: no-repeat;
 background-size: cover;
 background-position: center;
 max-width: 1600px;
+margin: 0 auto;
 }
 /* .hero-section {
 padding-top: 200px;
@@ -256,6 +257,21 @@ background-color: var(--next-color);
 
 .features-items:not(:last-child) {
     margin-right: 30px;
+}
+
+.features-icons {
+    /* background-position: 50% 50%; */
+width: 270px;
+height: 120px;
+left: 215px;
+top: 774px;
+background: #F5F4FA;
+border-radius: 4px;
+margin-bottom: 30px;
+}
+
+.svg-icons {
+background-position: center;
 }
 
 .features-title {
