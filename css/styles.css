@@ -124,12 +124,16 @@ letter-spacing: 0.02em;
 color: var(--text-color);
 }
 
+.header-mail::before {
+
+}
+
 .header-list .item + .item {
     margin-left: 50px;
 }
 
 .kontakts-list {
-display: flex;
+display: inline-flex;
 margin-left: auto;
 }    
 
@@ -155,6 +159,7 @@ color: var(--secondery-text-color);
 display: block;
 padding-top: 32px;
 padding-bottom: 32px;
+align-items: center;
 }
 
 .header-mail:hover,
@@ -163,6 +168,17 @@ padding-bottom: 32px;
 .header-tel:focus {
 color: var(--hover-color);
 }
+
+.header-icons:hover,
+.header-icons:focus {
+    color: var(--hover-color);
+}
+
+.header-icons {
+    fill: currentColor;
+    margin-right: 10px;
+}
+
 
 /*-----HERO-----*/
 .hero {
@@ -174,6 +190,7 @@ background-image:linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), 
 background-repeat: no-repeat;
 background-size: cover;
 background-position: center;
+max-width: 1600px;
 }
 /* .hero-section {
 padding-top: 200px;
@@ -347,10 +364,11 @@ margin-bottom: 16px;
     border-radius: 50%;
     justify-content: center;
     align-items: center;
-    color: #2196F3;
+    color: #AFB1B8;
 }
 
-.teams-soc-link:hover {
+.teams-soc-link:hover,
+.teams-soc-link:focus {
     background-color: #2196F3;
     color: #FFFFFF;
 }
