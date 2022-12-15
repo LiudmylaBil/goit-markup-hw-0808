@@ -261,6 +261,7 @@ background-color: var(--next-color);
 
 .features-icons {
     /* background-position: 50% 50%; */
+    display: flex;
 width: 270px;
 height: 120px;
 left: 215px;
@@ -268,6 +269,8 @@ top: 774px;
 background: #F5F4FA;
 border-radius: 4px;
 margin-bottom: 30px;
+justify-content: center;
+align-items: center;
 }
 
 .svg-icons {
@@ -295,7 +298,8 @@ color: var(--secondery-text-color);
 
 
 .photo-title,
-.team-title {
+.team-title,
+.client-title {
 font-size: 36px;
 line-height: 1.17;
 text-align: center;
@@ -393,12 +397,58 @@ margin-bottom: 16px;
     fill: currentColor;
 }
 
+
+/*-----Клієнти-----*/
+
+.client-list {
+display: flex;
+
+}
+
+.client-gallery {
+display: flex;
+width: 170px;
+height: 92px;
+left: 215px;
+top: 2490px;
+justify-content: center;
+align-items: center;
+border: 1px solid #AFB1B8;
+fill: #AFB1B8;
+border-radius: 4px;
+}
+
+.client-gallery:not(:last-child) {
+    margin-right: 30px;
+}
+
+.client-link {
+fill: #AFB1B8;  
+}
+
+.client-gallery:hover,
+.client-gallery:focus {
+border: 1px solid var(--hover-color);
+}
+
+.client-link:hover,
+.client-link:focus {
+fill: var(--hover-color);    
+}
+
+
+
+
 /*-----Футер-----*/
 
 .footer {
 background: var(--section-color);
 padding-top: 60px;
 padding-bottom: 60px;
+}
+
+.conteiner-section {
+    display: flex;
 }
 
 .footer-logo {
@@ -457,6 +507,63 @@ margin-top: 12px;
 .footer-tel:hover,
 .footer-tel:focus {
 color: var(--hover-color);
+}
+/* .footer-soc {
+    display: flex;
+} */
+
+.footer-title {
+width: 116px;
+height: 16px;
+left: 516px;
+top: 2748px;
+
+font-family: 'Roboto';
+font-style: normal;
+font-weight: 700;
+font-size: 14px;
+line-height: 1.14;
+letter-spacing: 0.03em;
+text-transform: uppercase;
+color: var(--next-color);
+margin-bottom: 20px;
+}
+
+.footer-soc {
+    margin-top: 0;
+    margin-left: 70px;
+}
+
+.footer-soc-list {
+    /* display: flex; */
+    justify-content: center;
+    align-items: center;
+    display: flex;
+}
+
+.footer-soc-items {
+    width: 44px;
+    height: 44px;
+}
+
+.footer-soc-items:not(:last-child) {
+    margin-right: 10px;
+}
+
+.footer-soc-link {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    border-radius: 50%;
+    background-color:  rgba(255, 255, 255, .1);
+    justify-content: center;
+    align-items: center;
+}
+
+.footer-soc-link:hover,
+.footer-soc-link:focus {
+    background-color: #2196F3;
+    color: #FFFFFF;
 }
 
 /*-----ПОРТФОЛІО-----*/ 
