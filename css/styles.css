@@ -135,6 +135,7 @@ color: var(--text-color);
 .kontakts-list {
 display: inline-flex;
 margin-left: auto;
+align-items: center;
 }    
 
 .kontakts-list .item + .item {
@@ -405,7 +406,7 @@ display: flex;
 
 }
 
-.client-gallery {
+.client-link {
 display: flex;
 width: 170px;
 height: 92px;
@@ -414,7 +415,7 @@ top: 2490px;
 justify-content: center;
 align-items: center;
 border: 1px solid #AFB1B8;
-fill: #AFB1B8;
+color: #AFB1B8;
 border-radius: 4px;
 }
 
@@ -423,17 +424,13 @@ border-radius: 4px;
 }
 
 .client-link {
-fill: #AFB1B8;  
-}
-
-.client-gallery:hover,
-.client-gallery:focus {
-border: 1px solid var(--hover-color);
+    fill: currentColor;
 }
 
 .client-link:hover,
 .client-link:focus {
-fill: var(--hover-color);    
+color: var(--hover-color); 
+border-color: var(--hover-color);   
 }
 
 
