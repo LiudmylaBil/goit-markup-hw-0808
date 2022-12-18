@@ -163,6 +163,11 @@ padding-bottom: 32px;
 align-items: center;
 }
 
+.header-mail.link,
+.header-tel.link {
+    display: flex;
+}
+
 .header-mail:hover,
 .header-mail:focus,
 .header-tel:hover,
