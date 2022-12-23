@@ -332,8 +332,33 @@ margin-bottom: 50px;
     display: flex;
 }
 
+.photo-gallery {
+    position: relative;
+}
+
 .photo-gallery:not(:last-child) {
     margin-right: 30px;
+}
+
+.photo-text {
+    position: absolute;
+    bottom: 0;
+    width: 370px;
+    height: 70px;
+    
+font-family: 'Roboto';
+font-style: normal;
+font-weight: 700;
+font-size: 14px;
+line-height: 1,14;
+text-align: center;
+letter-spacing: 0.03em;
+text-transform: uppercase;
+
+color: #FFFFFF;
+background-color: rgba(47, 48, 58, 0.8);
+padding-top: 27px;
+padding-bottom: 27px;
 }
 
 /*-----Команда-----*/
