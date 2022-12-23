@@ -43,7 +43,7 @@
     <section class="hero">
         <div class="conteiner">
         <h1 class="hero-title">Ефективні рішення для <br> вашого бізнесу</h1>
-        <button type="button" class="hero-btn button">Замовити послугу</button>
+        <button type="button" class="hero-btn button" data-modal-open>Замовити послугу</button>
         </div>
     </section>
     <!--Особливості-->
@@ -232,8 +232,7 @@
         </ul>
         </div>
     </section>
-    </main>
-        <!--Клієнти-->
+            <!--Клієнти-->
     <section class="client section">
         <div class="conteiner">
         <h2 class="client-title">Постійні клієнти</h2>
@@ -271,6 +270,7 @@
         </ul>
         </div>
     </section>
+    </main>
     <!--Футер-->
     <footer class="footer">
         <div class="conteiner conteiner-section">
@@ -315,5 +315,18 @@
             </div>
         </div>
     </footer>
+    <!--Модальне вікно-->
+    <div class="bacdrop is-hidden" data-modal>
+        <div class="modal">
+            <button type="button" class="modal-close" data-modal-close>
+                <svg width="18" height="18" class="">
+                            <use href="./images/icons.svg#icon-close"></use>
+                        </svg>
+            </button>
+        </div>
+    </div>
+    <script src="./js/modal.js">
+
+    </script>
 </body>
 </html>
