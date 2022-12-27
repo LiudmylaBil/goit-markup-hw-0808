@@ -327,8 +327,25 @@
                         </svg>
             </button>
             <p class="modal-heading">Залиште свої дані, ми вам передзвонимо</p>
-            <form action="
-            "></form>
+            <form action="">
+                <div class="modal-input-group">
+                    <label for="name">Ім'я</label>
+                    <input type="text" class="modal-input" placeholder="" name="name" id="name" required>
+                </div>
+                <div class="modal-input-group">
+                    <label for="tel">Телефон</label>
+                    <input type="tel" class="modal-input" placeholder="" name="tel" id="tel" required>
+                </div>
+                <div class="modal-input-group">
+                    <label for="email">Пошта</label>
+                    <input type="email" class="modal-input" placeholder="" name="email" id="email">
+                </div>
+                <div class="modal-input-group">
+                    <label for="comment">Коментар</label>
+                    <textarea name="comment" id="comment" class="modal-text" placeholder="Введіть текст"></textarea>
+                </div>
+                <button type="submit">Відправити</button>
+            </form>
         </div>
     </div>
     <script src="./js/modal.js">
