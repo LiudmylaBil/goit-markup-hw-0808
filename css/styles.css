@@ -571,6 +571,7 @@ letter-spacing: 0.03em;
 text-transform: uppercase;
 color: var(--next-color);
 margin-bottom: 20px;
+margin-top: 12px;
 }
 
 .footer-soc {
@@ -607,8 +608,75 @@ margin-bottom: 20px;
 
 .footer-soc-link:hover,
 .footer-soc-link:focus {
-    background-color: #2196F3;
+    background-color: var(--hover-color);
+    color: var(--next-color);
+}
+
+.footer-mailing-list {
+display: flex;
+}
+
+.mailing-list {
+    margin-left: 93px;
+    margin-top: 12px;
+}
+
+.footer-mailing-title {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: var(--next-color);
+    margin-bottom: 20px;
+}
+
+.footer-modal-input {
+min-width: 358px;
+height: 50px;
+border: 1px solid rgba(255, 255, 255, 0.3);
+box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+border-radius: 4px;
+background: #2F303A;
+padding-left: 16px;
+margin-right: 12px;
+cursor: pointer;
+}
+
+.footer-button {
+    width: 200;
+    height: 50;
+    font-style: normal;
+font-weight: 700;
+font-size: 16px;
+line-height: 1.88;
+display: flex;
+align-items: center;
+letter-spacing: 0.06em;
+justify-content: center;
     color: #FFFFFF;
+    background: var(--hover-color);
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    border-radius: 4px;
+    padding: 10px 28px;
+}
+
+.footer-button-svg {
+color: #FFFFFF;
+fill: currentColor;
+margin-left: 10px;
+display: flex;
+}
+
+.header-icons:hover,
+.header-icons:focus {
+    color: var(--hover-color);
+}
+
+.header-icons {
+    fill: currentColor;
+    margin-right: 10px;
 }
 
 /*-----Модальне вікно-----*/
@@ -769,8 +837,15 @@ color: rgba(117, 117, 117, 0.5);
 
 label.modal-politic-label {
     display: flex;
+    align-items: normal;
     margin-top: 20px;
     margin-left: 12px;
+    align-items: center;
+font-weight: 400;
+font-size: 14px;
+line-height: 1.71;
+letter-spacing: 0.03em;
+color: #757575;
 }
 
 .modal-politic-label::before {
@@ -785,15 +860,42 @@ label.modal-politic-label {
     cursor: pointer;
 }
 
+.modal-politic-check {
+
+}
+
 .modal-politic-check:checked + label::before {
     border: none;
     background-repeat: no-repeat;
     background-image: url(../images/check.svg);
     background-position: center;
     background-color: var(--hover-color); 
-    border-radius: 4px; 
+    border-radius: 2px;
 }
 
+.modal-contract {
+    text-decoration-line: underline;
+    color: #2196F3;
+margin-left: 4px;
+}
+
+.modal-button{
+    min-width: 200px;
+    height: 50px;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.88;
+    align-items: center;
+    text-align: center;
+    letter-spacing: 0.06em;
+    color: #FFFFFF;
+    background: var(--hover-color);
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    border-radius: 4px;
+    margin-left: 124px;
+    margin-right: 124px;
+}
 /*-----ПОРТФОЛІО-----*/ 
 
 .portfolio-main {
