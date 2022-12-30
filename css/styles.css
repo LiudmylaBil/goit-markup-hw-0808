@@ -867,6 +867,7 @@ color: #757575;
 .modal-politic-check:checked + label::before {
     border: none;
     background-repeat: no-repeat;
+    background-repeat: no-repeat;
     background-image: url(../images/check.svg);
     background-position: center;
     background-color: var(--hover-color); 
