@@ -1,0 +1,78 @@
+.team {
+    background-color: var(--team-b-color);
+}
+
+.team-list {
+    display: flex;
+}
+
+.team-gallery:not(:last-child) {
+    margin-right: 30px;
+}
+
+.team-gallery {
+// width: calc((100%-90px)/4);
+background-color: #FFFFFF;    
+box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+border-radius: 0px 0px 4px 4px;
+}
+
+.team-name {
+font-weight: 500;
+font-size: 16px;
+line-height: 1.19;
+text-align: center;
+letter-spacing: 0.03em;
+color: var(--text-color);
+    margin: 0px auto 10px auto;
+    padding-top: 30px;
+}
+
+
+.team-text {
+font-size: 16px;
+line-height: 1.19;
+text-align: center;
+letter-spacing: 0.03em;
+color: var(--secondery-text-color);
+margin: 0px auto;
+margin-bottom: 16px;
+}
+
+.teams-soc-list {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 30px;
+}
+
+.teams-soc-items {
+    width: 44px;
+    height: 44px;
+}
+
+.teams-soc-items:not(:last-child) {
+    margin-right: 10px;
+}
+
+.teams-soc-link {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    background-color: FFFFFF;
+    border-radius: 50%;
+    justify-content: center;
+    align-items: center;
+    color: #AFB1B8;
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1), background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.teams-soc-link:hover,
+.teams-soc-link:focus {
+    background-color: #2196F3;
+    color: #FFFFFF;
+}
+
+.teams-soc-icons {
+    fill: currentColor;
+}
