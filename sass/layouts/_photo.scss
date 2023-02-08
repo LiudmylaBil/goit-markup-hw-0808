@@ -1,32 +1,38 @@
+
+
+@media screen and (max-width: 1199px) {
+    .photo {
+        display: none;
+    }
+}
+
+@media screen and (min-width: 1200px) {
 .photo.section {
     padding-top: 0;
 }
 
-
-.photo-title,
-.team-title,
-.client-title {
-font-size: 36px;
-line-height: 1.17;
+.photo-title {
+font-size: 28px;
+line-height: 1.18;
 text-align: center;
 letter-spacing: 0.03em;
 color: var(--text-color);
 margin-bottom: 50px;
 }
 
-.photo-list {
+.photo-works {
     display: flex;
 }
 
-.photo-gallery {
+.photo-works__gallery {
     position: relative;
 }
 
-.photo-gallery:not(:last-child) {
+.photo-works__gallery:not(:last-child) {
     margin-right: 30px;
 }
 
-.photo-text {
+.photo-works__text {
     position: absolute;
     bottom: 0;
     width: 370px;
@@ -46,3 +52,5 @@ background-color: rgba(47, 48, 58, 0.8);
 padding-top: 27px;
 padding-bottom: 27px;
 }
+}
+
