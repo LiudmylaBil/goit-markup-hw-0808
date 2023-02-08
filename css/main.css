@@ -134,9 +134,11 @@ label.modal-politic-label, .modal-close, .footer-button, .footer-soc-link, .foot
   .modal-menu-oupen {
     display: none;
   }
+  .navigation {
+    margin-left: 87px;
+  }
   .navigation__list {
     display: flex;
-    margin-left: 87px;
   }
   .navigation__link {
     display: block;
